@@ -13,14 +13,21 @@
 ## ⚡ Quick Evaluation
 
 - 🌐 **Live Prototype:** [skillsync-omega-one.vercel.app](https://skillsync-omega-one.vercel.app/)
-<img width="1902" height="863" alt="Screenshot 2026-09-24 144243" src="https://github.com/user-attachments/assets/4bc5ca39-c6e4-45c1-a5b3-6dec0b219763" />
-<img width="1917" height="861" alt="Screenshot 2026-09-24 143608" src="https://github.com/user-attachments/assets/8b1d4e64-d43d-488b-8ef2-3fcd15f47bd6" />
-<img width="1917" height="870" alt="Screenshot 2026-09-24 143538" src="https://github.com/user-attachments/assets/130069c3-98cc-4803-abaf-ff3ec8d6f2ba" />
-<img width="1911" height="863" alt="Screenshot 2026-09-24 143520" src="https://github.com/user-attachments/assets/1d8dfaa2-8ee2-4d52-8638-2ed42559b817" />
+
+<table>
+  <tr>
+    <td><img width="450" alt="Screenshot 2026-09-24 144243" src="https://github.com/user-attachments/assets/4bc5ca39-c6e4-45c1-a5b3-6dec0b219763" /></td>
+    <td><img width="450" alt="Screenshot 2026-09-24 143608" src="https://github.com/user-attachments/assets/8b1d4e64-d43d-488b-8ef2-3fcd15f47bd6" /></td>
+  </tr>
+  <tr>
+    <td><img width="450" alt="Screenshot 2026-09-24 143538" src="https://github.com/user-attachments/assets/130069c3-98cc-4803-abaf-ff3ec8d6f2ba" /></td>
+    <td><img width="450" alt="Screenshot 2026-09-24 143520" src="https://github.com/user-attachments/assets/1d8dfaa2-8ee2-4d52-8638-2ed42559b817" /></td>
+  </tr>
+</table>
 
 ## 🎯 The Challenge
 
-More than **1.5 lakh students** graduate from Maharashtra’s ITIs and polytechnics every year, while **42% require retraining**. Conventional syllabi can lag **3–5 years** behind changing industry needs, creating a **40%+ skill mismatch**.
+More than **1.5 lakh students** graduate from Maharashtra’s ITIs and polytechnics every year, while **42% require retraining**. Conventional syllabi can lag **3–5 years** behind changing industry [...]
 
 ## 💡 The Solution
 
