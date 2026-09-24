@@ -13,8 +13,6 @@
 ## ⚡ Quick Evaluation
 
 - 🌐 **Live Prototype:** [skillsync-omega-one.vercel.app](https://skillsync-omega-one.vercel.app/)
-- 💻 **Source Code:** [TeamSkillSync/SkillSync-Engine](https://github.com/TeamSkillSync/SkillSync-Engine)
-- 🎥 **Demo Video:** [Watch the 2-minute walkthrough](https://youtu.be/YOUR_VIDEO_ID) *(replace with the final link)*
 <img width="1902" height="863" alt="Screenshot 2026-09-24 144243" src="https://github.com/user-attachments/assets/4bc5ca39-c6e4-45c1-a5b3-6dec0b219763" />
 <img width="1917" height="861" alt="Screenshot 2026-09-24 143608" src="https://github.com/user-attachments/assets/8b1d4e64-d43d-488b-8ef2-3fcd15f47bd6" />
 <img width="1917" height="870" alt="Screenshot 2026-09-24 143538" src="https://github.com/user-attachments/assets/130069c3-98cc-4803-abaf-ff3ec8d6f2ba" />
