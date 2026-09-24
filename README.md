@@ -3,8 +3,8 @@
 > **Smart India Hackathon 2026** • Problem Statement: **SIH26134**  
 > Sponsored by: **Government of Maharashtra** — Department of Skills, Employment, Entrepreneurship & Innovation
 
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Vercel-000?style=for-the-badge&logo=vercel)](https://skillsync-maha.vercel.app)
-[![SIH 2026](https://img.shields.io/badge/SIH_2026-SIH26134-2563EB?style=for-the-badge)](https://sih.gov.in)
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Vercel-000?style=for-the-badge&logo=vercel)]([https://skillsync-maha.vercel.app](https://skillsync-omega-one.vercel.app/))
+ 
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
