@@ -1,179 +1,93 @@
-# 🏛️ SkillSync — Maharashtra Labour Market Intelligence & NSQF Curriculum Alignment Platform
+# 🏛️ SkillSync — AI Labour Intelligence & NSQF Alignment
 
-> **Smart India Hackathon 2026** • Problem Statement: **SIH26134**  
-> Sponsored by: **Government of Maharashtra** — Department of Skills, Employment, Entrepreneurship & Innovation
+> **Smart India Hackathon 2026** · Problem Statement: **SIH26134**  
+> **Government of Maharashtra** · Department of Skills, Employment, Entrepreneurship & Innovation  
+> **Team SkillSync** · Vaagdevi Colleges, Warangal
 
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Vercel-000?style=for-the-badge&logo=vercel)]([https://skillsync-maha.vercel.app](https://skillsync-omega-one.vercel.app/))
- 
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Vercel-000?style=for-the-badge&logo=vercel)](https://skillsync-omega-one.vercel.app/)
+[![SIH Problem](https://img.shields.io/badge/SIH_2026-SIH26134-2563EB?style=for-the-badge)](https://sih.gov.in)
+[![Bilingual](https://img.shields.io/badge/Bilingual-English_%7C_%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80-orange?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
----
+## ⚡ Quick Evaluation
 
-## 🎯 The Problem
+- 🌐 **Live Prototype:** [skillsync-omega-one.vercel.app](https://skillsync-omega-one.vercel.app/)
+- 💻 **Source Code:** [TeamSkillSync/SkillSync-Engine](https://github.com/TeamSkillSync/SkillSync-Engine)
+- 🎥 **Demo Video:** [Watch the 2-minute walkthrough](https://youtu.be/YOUR_VIDEO_ID) *(replace with the final link)*
 
-Every year, over **1.5 lakh students** graduate from Maharashtra's ITIs and Polytechnics, yet **42% require complete retraining** by employers. Vocational syllabi are updated once every **3–5 years**, while industrial demand in corridors like **Pune, Nashik, and Chhatrapati Sambhajinagar** shifts every **6 months** — toward EV, IoT, Industrial Automation, and Solar energy.
+## 🎯 The Challenge
 
-This creates a **40%+ skill mismatch**, producing oversupplied graduates in dying trades and extreme shortages in emerging sectors.
+More than **1.5 lakh students** graduate from Maharashtra’s ITIs and polytechnics every year, while **42% require retraining**. Conventional syllabi can lag **3–5 years** behind changing industry needs, creating a **40%+ skill mismatch**.
 
----
+## 💡 The Solution
 
-## 💡 Our Solution: SkillSync
+**SkillSync** is an AI-powered labour-market intelligence platform that converts live hiring demand into actionable curriculum and career decisions.
 
-**SkillSync** is an **AI-powered public digital infrastructure platform** that:
+- Scans **68,410+ job signals** across Maharashtra
+- Matches ITI/polytechnic curricula with industry skills using **NLP and semantic similarity**
+- Generates curriculum gap analysis and amendment recommendations
+- Recommends personalized bridge modules and apprenticeship pathways
+- Supports a fully bilingual **English / मराठी** experience
 
-1. **Scans 68,000+ live job signals** across NCS and major hiring portals
-2. **Maps vocational curricula** (ITI/Polytechnic syllabi) against real-time industry demand using **NLP and vector similarity**
-3. **Generates actionable curriculum patches** with projected placement uplift metrics
-4. **Provides personalized bridge modules** for ITI trainees to fill skill gaps
+## ✨ 5 High-Impact Innovations
 
----
+1. **State Intelligence Hub** — Demand-supply insights across Pune, Nashik, Sambhajinagar, Nagpur and AURIC.
+2. **NSQF AI Alignment Engine** — Upload a syllabus and receive a rapid retained-vs-missing skill analysis.
+3. **AI Curriculum Patches** — Flags obsolete units and recommends updates with projected placement impact.
+4. **Trainee Career Pathways** — Personalized modules for EV diagnostics, PLC/SCADA, solar and IoT skills.
+5. **Apprenticeship Matching** — Connects skill-ready candidates with relevant employer opportunities.
 
-## 🖥️ Platform Screens
+## 🏗️ Architecture
 
-### Screen 1: State Intelligence Hub
-> Macro view for policymakers showing demand-supply mismatches across Maharashtra's industrial corridors.
-
-- 4 KPI cards: Live job signals, curriculum alignment score, obsolete trades, emerging sectors
-- Recharts-powered demand vs. ITI output comparison
-- District-level skill gap hotspots (Pune, Nashik, Sambhajinagar, Nagpur)
-
-### Screen 2: NSQF AI Curriculum Alignment Engine ⚡
-> The flagship feature — drag & drop a syllabus and get instant gap analysis.
-
-- Interactive 3-second NLP pipeline visualization (spaCy NER → vector embeddings → cosine matching)
-- Split diff view: 🟢 Retained skills vs 🔴 Missing industry gaps
-- Obsolete unit flagging with deprecation reasons
-- **AI Advisory Patch Card** with formal government amendment recommendation (+28.4% placement uplift)
-
-### Screen 3: Candidate Career Pathway
-> Individual ITI trainee view showing personalized skill gaps and bridge module recommendations.
-
-- Candidate profile with industry readiness score
-- Phase-wise bridge modules (Solar PV, EV Diagnostics, PLC/SCADA)
-- Direct job alignment with before/after match projections
-
----
-
-## 🏗️ Technical Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                      DATA SOURCES (Layer 1)                        │
-│  NCS API • Naukri • Indeed • TeamLease • Monster India • NSQF DB   │
-└──────────────────────────────┬──────────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────────┐
-│                    NLP / ML ENGINE (Layer 2)                        │
-│  spaCy NER (Skill Entity Extraction)                               │
-│  Sentence-BERT (all-MiniLM-L6-v2) → Vector Embeddings             │
-│  Cosine Similarity against NSQF / NOS / O*NET Taxonomies           │
-└──────────────────────────────┬──────────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────────┐
-│                    DATA STORE (Layer 3)                             │
-│  PostgreSQL + pgvector (Semantic Search)                            │
-│  Deterministic JSON Cache (Hackathon MVP)                          │
-└──────────────────────────────┬──────────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────────┐
-│                    API LAYER (Layer 4)                              │
-│  FastAPI Microservices • REST Endpoints                             │
-└──────────────────────────────┬──────────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────────┐
-│                    FRONTEND (Layer 5)                               │
-│  Next.js 14 • Tailwind CSS • Recharts • Lucide React               │
-│  Bilingual (English / मराठी) • Responsive • Vercel Deployment      │
-└─────────────────────────────────────────────────────────────────────┘
+```text
+[68K+ Job Signals] → [spaCy NER + Sentence-BERT] → [PostgreSQL + pgvector]
+        → [FastAPI Services] → [Bilingual Next.js / React Interface]
 ```
 
----
+> ⚡ Built with an open-source stack — no proprietary LLM subscription required.
+
+## 📊 Measurable Impact
+
+| Metric | SkillSync Impact |
+|---|---:|
+| Syllabus revision lag | **80% reduction** |
+| Projected placement uplift | **+28.4%** |
+| Legacy trades flagged | **14** |
+| Retraining savings | **₹18,500 per apprentice** |
+| Job signals analysed | **68,410+** |
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Frontend** | Next.js 14, React 18, Tailwind CSS | UI framework & styling |
-| **Charts** | Recharts | Data visualization |
-| **Icons** | Lucide React | UI iconography |
-| **Backend** | Python FastAPI | API microservices |
-| **ML/NLP** | spaCy, Sentence-BERT (all-MiniLM-L6-v2) | Skill extraction & semantic matching |
-| **Database** | PostgreSQL + pgvector | Vector similarity search |
-| **Hosting** | Vercel (Frontend), Railway (Backend) | Zero-cost deployment |
-
-> ⚡ **100% open-source stack** — Zero proprietary LLM or API subscription costs
-
----
-
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/TeamSkillSync/SkillSync-Engine.git
-cd SkillSync-Engine
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the platform.
-
----
-
-## 🌐 Bilingual Support
-
-SkillSync supports **English** and **मराठी (Marathi)** via a one-click toggle in the navbar. All major headers, KPI labels, skill names, and advisory text are dynamically translated — demonstrating regional accessibility for Government of Maharashtra evaluators.
-
----
-
-## 📊 Quantifiable Impact
-
-| Metric | Value |
-|--------|-------|
-| Syllabus revision lag reduction | **80%** (from 3–5 years to real-time) |
-| Projected ITI placement uplift | **+28.4%** |
-| Trades flagged for urgent review | **14 legacy trades** |
-| Cost savings per apprentice | **₹18,500** (reduced retraining) |
-| Job signals scanned | **68,410+** across Maharashtra |
-
----
+**Frontend:** Next.js 14 · React 18 · Tailwind CSS · Recharts  
+**Backend:** Python · FastAPI  
+**ML/NLP:** spaCy · Sentence-BERT (`all-MiniLM-L6-v2`)  
+**Data:** PostgreSQL · pgvector · JSON cache  
+**Deployment:** Vercel · Railway
 
 ## 👥 Team SkillSync
 
 | Member | Role |
-|--------|------|
+|---|---|
 | **Mirza Amaanullah Baig** | Team Lead & Systems Architect |
 | **Mohammed Saheb Hussain** | Frontend Developer |
 | **Mohammad Riyaz** | Backend & API Engineer |
-| **Naveed Mohammed** | ML / NLP Engineer |
+| **Naveed Mohammed** | ML / NLP Specialist |
 | **Mohammed Adam** | DevOps & Cloud Deployment |
 | **Seeyana Samreen** | UI/UX & Product Lead |
 
-**Institute:** Vaagdevi Colleges, Bollikunta, Warangal
+## 🚀 Run Locally
 
----
+```bash
+git clone https://github.com/riyazweb/skillsync-sih.git
+cd skillsync-sih
+npm install
+npm run dev
+```
 
-## 📎 Submission Links
-
-- 🔗 **Live Prototype:** [skillsync-maha.vercel.app](https://skillsync-maha.vercel.app)
-- 📂 **GitHub Repository:** [github.com/TeamSkillSync/SkillSync-Engine](https://github.com/TeamSkillSync/SkillSync-Engine)
-- 🎥 **2-Minute Demo Video:** [YouTube (Unlisted)](https://youtu.be/xxxxxx)
-
----
+Open [http://localhost:3000](http://localhost:3000).
 
 ## 📄 License
 
-This project is open-source under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE).
 
----
-
-<p align="center">
-  Built with ❤️ for <strong>Smart India Hackathon 2026</strong> 🇮🇳
-</p>
+<p align="center">Built with ❤️ for <strong>Smart India Hackathon 2026</strong> 🇮🇳</p>
